@@ -47,7 +47,7 @@ function renderLogin() {
           <!-- Logo & Header -->
           <div class="text-center mb-10">
             <div class="mx-auto h-20 w-20 flex items-center justify-center mb-6">
-                <img src="./assets/githubLogo.png" alt="GitHub Logo" class="w-full h-full object-contain">
+                <img src="/assets/githubLogo.png" alt="GitHub Logo" class="w-full h-full object-contain">
             </div>
             <h2 class="text-2xl font-bold text-[#1B254B] mb-2">GitHub Issues Tracker</h2>
             <p class="text-sm text-gray-500 font-medium">
@@ -146,7 +146,7 @@ function renderDashboard() {
       <nav class="bg-white border-b border-gray-200 px-4 py-3 sticky top-0 z-10">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div class="flex items-center gap-2">
-            <img src="/assets/github-logo.png" alt="GitHub Logo" class="w-8 h-8">
+            <img src="/assets/githubLogo.png" alt="GitHub Logo" class="w-8 h-8">
             <span class="font-semibold text-xl tracking-tight text-gray-900">GitHub Issues Tracker</span>
           </div>
 
@@ -183,7 +183,7 @@ function renderDashboard() {
           <div class="p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3">
               <div class="p-2 bg-blue-100 text-blue-600 rounded-lg">
-                <img src="./assets/aperture.png" alt="All Issues" class="w-6 h-6">
+                <img src="/assets/aperture.png" alt="All Issues" class="w-6 h-6">
               </div>
               <div>
                 <h2 class="text-lg font-bold text-gray-900" id="total-count">
@@ -197,11 +197,11 @@ function renderDashboard() {
 
             <div class="flex items-center gap-4 text-sm font-medium">
               <div class="flex items-center gap-1.5 text-gray-700">
-                <img src="./assets/openStatus.png" alt="Open" class="w-4 h-4">
+                <img src="/assets/openStatus.png" alt="Open" class="w-4 h-4">
                 <span id="open-count">0 Open</span>
               </div>
               <div class="flex items-center gap-1.5 text-gray-700">
-                <img src="./assets/closeStatus.png" alt="Closed" class="w-4 h-4">
+                <img src="/assets/closeStatus.png" alt="Closed" class="w-4 h-4">
                 <span id="closed-count">0 Closed</span>
               </div>
             </div>
@@ -395,7 +395,7 @@ function renderIssues() {
           <!-- Header -->
           <div class="flex justify-between items-start mb-4">
             <div class="inline-flex items-center justify-center w-8 h-8 rounded-full ${isOpen ? 'bg-emerald-100' : 'bg-purple-100'}">
-              <img src="${isOpen ? '/assets/Open-Status.png' : '/assets/Closed- Status .png'}" class="w-5 h-5" alt="${issue.status}">
+              <img src="${isOpen ? '/assets/openStatus.png' : '/assets/closeStatus.png'}" class="w-5 h-5" alt="${issue.status}">
             </div>
             <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide ${priorityClass}">
               ${issue.priority}
