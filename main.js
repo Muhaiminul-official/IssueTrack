@@ -47,7 +47,7 @@ function renderLogin() {
           <!-- Logo & Header -->
           <div class="text-center mb-10">
             <div class="mx-auto h-20 w-20 flex items-center justify-center mb-6">
-                <img src="/assets/githubLogo.png" alt="GitHub Logo" class="w-full h-full object-contain">
+                <img src="assets/githubLogo.png" alt="GitHub Logo" class="w-full h-full object-contain">
             </div>
             <h2 class="text-2xl font-bold text-[#1B254B] mb-2">GitHub Issues Tracker</h2>
             <p class="text-sm text-gray-500 font-medium">
@@ -395,7 +395,7 @@ function renderIssues() {
           <!-- Header -->
           <div class="flex justify-between items-start mb-4">
             <div class="inline-flex items-center justify-center w-8 h-8 rounded-full ${isOpen ? 'bg-emerald-100' : 'bg-purple-100'}">
-              <img src="${isOpen ? '/assets/openStatus.png' : '/assets/closeStatus.png'}" class="w-5 h-5" alt="${issue.status}">
+              <img src="${isOpen ? 'assets/openStatus.png' : 'assets/closeStatus.png'}" class="w-5 h-5" alt="${issue.status}">
             </div>
             <span class="px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide ${priorityClass}">
               ${issue.priority}
