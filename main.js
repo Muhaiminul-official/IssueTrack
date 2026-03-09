@@ -47,7 +47,7 @@ function renderLogin() {
           <!-- Logo & Header -->
           <div class="text-center mb-10">
             <div class="mx-auto h-20 w-20 flex items-center justify-center mb-6">
-                <img src="/assets/github-logo.png" alt="GitHub Logo" class="w-full h-full object-contain">
+                <img src="/assets/githubLogo.png" alt="GitHub Logo" class="w-full h-full object-contain">
             </div>
             <h2 class="text-2xl font-bold text-[#1B254B] mb-2">GitHub Issues Tracker</h2>
             <p class="text-sm text-gray-500 font-medium">
@@ -183,7 +183,7 @@ function renderDashboard() {
           <div class="p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div class="flex items-center gap-3">
               <div class="p-2 bg-blue-100 text-blue-600 rounded-lg">
-                <img src="/assets/Aperture.png" alt="All Issues" class="w-6 h-6">
+                <img src="/assets/aperture.png" alt="All Issues" class="w-6 h-6">
               </div>
               <div>
                 <h2 class="text-lg font-bold text-gray-900" id="total-count">
@@ -197,11 +197,11 @@ function renderDashboard() {
 
             <div class="flex items-center gap-4 text-sm font-medium">
               <div class="flex items-center gap-1.5 text-gray-700">
-                <img src="/assets/Open-Status.png" alt="Open" class="w-4 h-4">
+                <img src="/assets/openStatus.png" alt="Open" class="w-4 h-4">
                 <span id="open-count">0 Open</span>
               </div>
               <div class="flex items-center gap-1.5 text-gray-700">
-                <img src="/assets/Closed- Status .png" alt="Closed" class="w-4 h-4">
+                <img src="/assets/closeStatus.png" alt="Closed" class="w-4 h-4">
                 <span id="closed-count">0 Closed</span>
               </div>
             </div>
